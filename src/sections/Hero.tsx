@@ -23,13 +23,34 @@ export const HeroSection = () => {
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
-        <HeroOrbit size={430} rotation={-14} shouldOrbit orbitDuration="30s" shouldSpin spinDuration="3s">
+        <HeroOrbit
+          size={430}
+          rotation={-14}
+          shouldOrbit
+          orbitDuration="30s"
+          shouldSpin
+          spinDuration="3s"
+        >
           <SparkleIcon className="size-8 text-emerald-300/20 pointer-events-none" />
         </HeroOrbit>
-        <HeroOrbit size={550} rotation={20} shouldOrbit orbitDuration="38s" shouldSpin spinDuration="6s">
+        <HeroOrbit
+          size={550}
+          rotation={20}
+          shouldOrbit
+          orbitDuration="38s"
+          shouldSpin
+          spinDuration="6s"
+        >
           <StarIcon className="size-12 text-emerald-300 pointer-events-none" />
         </HeroOrbit>
-        <HeroOrbit size={800} rotation={-72} shouldOrbit orbitDuration="48s" shouldSpin spinDuration="6s">
+        <HeroOrbit
+          size={800}
+          rotation={-72}
+          shouldOrbit
+          orbitDuration="48s"
+          shouldSpin
+          spinDuration="6s"
+        >
           <StarIcon className="size-28 text-emerald-300 pointer-events-none" />
         </HeroOrbit>
       </div>
@@ -42,7 +63,9 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
-            <div className="text-sm font-medium">Available for new projects</div>
+            <div className="text-sm font-medium">
+              Available for new projects
+            </div>
           </div>
         </div>
 
@@ -51,7 +74,8 @@ export const HeroSection = () => {
             Building scalable systems & sleek interfaces
           </h1>
           <p className="mt-4 text-white/60 md:text-lg">
-            Full-stack developer with a focus on performance, scalability, and user experience.
+            Full-stack developer with a focus on performance, scalability, and
+            user experience.
           </p>
         </div>
 
@@ -61,15 +85,28 @@ export const HeroSection = () => {
             className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
             onClick={() => {
               console.log("Explore my work clicked!");
-              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth", block: "start" });
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth", block: "start" });
             }}
           >
             <span className="font-semibold">Explore my work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <button
+            className="inline-flex items-center gap-2 border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+            onClick={() => {
+              const resumeUrl = "/resume.pdf"; // Update this path
+              const link = document.createElement("a");
+              link.href = resumeUrl;
+              link.download = "Mihir's Resume.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
+          >
             <span>👋</span>
-            <span className="font-semibold">Let&apos;s connect</span>
+            <span className="font-semibold">Download Resume</span>
           </button>
         </div>
       </div>
