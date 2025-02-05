@@ -56,7 +56,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="container relative z-50">
+      <div className="container relative z-50 -mt-12">
         <div className="flex flex-col items-center">
           <Image src={memojiImage} className="size-[100px]" alt="Memoji" />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
@@ -71,18 +71,19 @@ export const HeroSection = () => {
 
         <div className="max-w-lg mx-auto text-center">
           <h1 className="font-serif text-3xl md:text-5xl mt-8 tracking-wide">
-            Building scalable systems & sleek interfaces
+            Engineering scalable & high-performance systems
           </h1>
           <p className="mt-4 text-white/60 md:text-lg">
-            Full-stack developer with a focus on performance, scalability, and
-            user experience.
+            Backend-focused full-stack developer specializing in scalable
+            architectures, API design—ensuring
+            reliability, efficiency at every step.
           </p>
         </div>
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 relative z-50">
           <button
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition-transform transform hover:scale-105 hover:bg-white/10 hover:border-white/25 active:scale-95"
             onClick={() => {
               console.log("Explore my work clicked!");
               document
@@ -90,13 +91,16 @@ export const HeroSection = () => {
                 ?.scrollIntoView({ behavior: "smooth", block: "start" });
             }}
           >
-            <span className="font-semibold">Explore my work</span>
-            <ArrowDown className="size-4" />
+            <span className="font-semibold transition-colors duration-300">
+              Explore my work
+            </span>
+            <ArrowDown className="size-4 transition-transform transform group-hover:translate-y-1" />
           </button>
+
           <button
-            className="inline-flex items-center gap-2 border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+            className="inline-flex items-center gap-2 border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-transform transform hover:scale-105 hover:bg-gray-300 active:scale-95 shadow-md hover:shadow-lg"
             onClick={() => {
-              const resumeUrl = "/Mihir's Resume.pdf"; // Update this path
+              const resumeUrl = "/Mihir's Resume.pdf"; // Ensure it's in the public folder
               const link = document.createElement("a");
               link.href = resumeUrl;
               link.download = "Mihir's Resume.pdf";
@@ -105,8 +109,12 @@ export const HeroSection = () => {
               document.body.removeChild(link);
             }}
           >
-            <span>👋</span>
-            <span className="font-semibold">Download Resume</span>
+            <span className="transition-transform transform hover:rotate-12">
+              👋
+            </span>
+            <span className="font-semibold transition-colors duration-300">
+              Download Resume
+            </span>
           </button>
         </div>
       </div>
