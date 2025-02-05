@@ -88,33 +88,50 @@ const hobbies = [
   },
 ]
 
-const LocationText = () => (
-  <motion.div
-    className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-gray-900/80 text-white/80 text-sm px-4 py-1.5 rounded-full shadow-md backdrop-blur cursor-pointer overflow-hidden"
-    initial={{ width: "120px" }}
-    whileHover={{ width: "320px" }}
-    transition={{ duration: 0.4, ease: "easeInOut" }}
-  >
-    <div className="relative h-6">
-      <motion.span
-        className="absolute inset-0 flex items-center justify-center whitespace-nowrap"
-        initial={{ opacity: 1, x: 0 }}
-        whileHover={{ opacity: 0, x: -20 }}
-        transition={{ duration: 0.2 }}
-      >
-        📍 Pune, India
-      </motion.span>
-      <motion.span
-        className="absolute bg-gray-900 rounded-full inset-0 flex items-center justify-center whitespace-nowrap"
-        initial={{ opacity: 0, x: 20 }}
-        whileHover={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.2 }}
-      >
-        📍 Akurdi, Pune, Maharashtra, India
-      </motion.span>
-    </div>
-  </motion.div>
-);
+const LocationText = () => {
+  const containerVariants = {
+    initial: { width: "120px" },
+    hover: { width: "320px" }
+  };
+
+  const shortTextVariants = {
+    initial: { opacity: 1, x: 0 },
+    hover: { opacity: 0, x: -20 }
+  };
+
+  const longTextVariants = {
+    initial: { opacity: 0, x: 20 },
+    hover: { opacity: 1, x: 0 }
+  };
+
+  return (
+    <motion.div
+      className="group absolute bottom-3 left-1/2 -translate-x-1/2 bg-gray-900/80 text-white/80 text-sm px-4 py-1.5 rounded-full shadow-md backdrop-blur cursor-pointer overflow-hidden"
+      initial="initial"
+      whileHover="hover"
+      animate="initial"
+      variants={containerVariants}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+    >
+      <div className="relative h-6">
+        <motion.span
+          className="absolute inset-0 flex items-center justify-center whitespace-nowrap"
+          variants={shortTextVariants}
+          transition={{ duration: 0.2 }}
+        >
+          📍 Pune, India
+        </motion.span>
+        <motion.span
+          className="absolute inset-0 flex items-center justify-center whitespace-nowrap"
+          variants={longTextVariants}
+          transition={{ duration: 0.2 }}
+        >
+          📍 Akurdi, Pune, Maharashtra, India
+        </motion.span>
+      </div>
+    </motion.div>
+  );
+};
 
 export const AboutSection = () => {
   const constraintRef = useRef(null)
