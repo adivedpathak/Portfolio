@@ -96,7 +96,7 @@ export const HeroSection = () => {
           <button
             className="inline-flex items-center gap-2 border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
             onClick={() => {
-              const resumeUrl = "/resume.pdf"; // Update this path
+              const resumeUrl = "/Mihir's Resume.pdf"; // Update this path
               const link = document.createElement("a");
               link.href = resumeUrl;
               link.download = "Mihir's Resume.pdf";
