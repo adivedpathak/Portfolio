@@ -147,9 +147,9 @@ export const AboutSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="h-[320px] flex flex-col justify-between">
               <CardHeader title="Anime" description="Explore my current favorite anime." />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
+              <motion.div className="w-40 mx-auto mt-2 md:mt-0" drag dragConstraints={constraintRef} whileHover={{ scale: 2.3 }}>
                 <Image src={BookImage || "/placeholder.svg"} alt="Book Cover" />
-              </div>
+              </motion.div>
             </Card>
             <Card className="h-[320px] md:col-span-2">
               <CardHeader
