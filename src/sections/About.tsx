@@ -1,7 +1,7 @@
 "use client"
 import { SectionHeader } from "@/components/SectionHeader"
 import { Card } from "@/components/Card"
-import BookImage from "@/assets/images/book-cover.png"
+import BookImage from "@/assets/images/tensura.webp"
 import Image from "next/image"
 import JavascriptIcon from "@/assets/icons/square-js.svg"
 import HTMLIcon from "@/assets/icons/html5.svg"
@@ -146,7 +146,7 @@ export const AboutSection = () => {
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="h-[320px] flex flex-col justify-between">
-              <CardHeader title="My Reads" description="Explore the books shaping my perspectives." />
+              <CardHeader title="Anime" description="Explore my current favorite anime." />
               <div className="w-40 mx-auto mt-2 md:mt-0">
                 <Image src={BookImage || "/placeholder.svg"} alt="Book Cover" />
               </div>
