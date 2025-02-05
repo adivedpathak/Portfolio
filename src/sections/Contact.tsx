@@ -26,7 +26,7 @@ export const ContactSection = () => {
             </div>
             <a
               href="mailto:meeheer123@gmail.com?subject=Hello&body=I'd like to connect"
-              className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 no-underline hover:bg-gray-800 transition-colors cursor-pointer"
+              className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 no-underline hover:scale-110 transition-transform duration-300 cursor-pointer hover:bg-gray-800"
               rel="noopener noreferrer"
             >
               <span className="font-semibold">Contact Me</span>
