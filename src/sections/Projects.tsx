@@ -1,4 +1,4 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
+import rajpath from "@/assets/images/Rajpath.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
@@ -10,40 +10,40 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
+    company: "Rajpath",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Voter Booth Locator",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+    { title: "Reduced manual queries by 70%" },
+    { title: "Benefited over 1,500 voters" },
+    { title: "Scaled for 100,000 users for 2024 elections" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://rajpath-2024.vercel.app/",
+    image: rajpath,
+  },
+  {
+    company: "BNS Saral",
+    year: "2024",
+    title: "Legal Framework Automation",
+    results: [
+    { title: "Improved efficiency for 1,000+ legal professionals" },
+    { title: "Automated 1,500+ legal updates, enhancing accuracy by 30%" },
+    { title: "Reduced manual labor by 50% with Docker deployment" },
+    ],
+    link: "https://interview-platform-ten.vercel.app/",
+    image: rajpath,
+  },
+  {
+    company: "CodeCollab",
+    year: "2025",
+    title: "Real-time Collaborative Code Editor",
+    results: [
+    { title: "Supported 50+ programming languages for coding interviews" },
+    { title: "Enhanced collaboration for 5+ users, reducing project times by 25%" },
+    { title: "Facilitated real-time output sharing, cutting turnaround times by 20%" },
+    ],
+    link: "https://interview-platform-ten.vercel.app/",
+    image: rajpath,
   },
 ];
 
@@ -93,11 +93,11 @@ export const ProjectsSection = () => {
                   </a>
                 </div>
                 <div className="relative">
-                  <Image
+                  {/* <Image
                     src={project.image}
                     alt={project.title}
                     className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-                  />
+                  /> */}
                 </div>
               </div>
             </Card>
