@@ -45,48 +45,49 @@ const toolBoxItems = [
 
 const hobbies = [
   {
-    title: 'Painting',
-    emoji: '🎨',
+    title: 'Competitive Programming',
+    emoji: '💻',  // Represents coding and problem-solving
     left: '5%',
     top: '5%',
   },
   {
-    title: 'Photography',
-    emoji: '📸',
+    title: 'Automating Software',
+    emoji: '🤖',  // Automation and AI-related
     left: '50%',
     top: '5%',
   },
   {
-    title: 'Hiking',
-    emoji: '🥾',
+    title: 'Collecting Tech Gadgets',
+    emoji: '🔌',  // Represents tech and gadgets
     left: '35%',
     top: '40%',
   },
   {
     title: 'Gaming',
-    emoji: '🎮',
+    emoji: '🎮',  // Classic gaming controller
     left: '10%',
     top: '35%',
   },
   {
     title: 'Music',
-    emoji: '🎵',
+    emoji: '🎵',  // Represents music in general
     left: '70%',
     top: '45%',
   },
   {
     title: 'Reading',
-    emoji: '📚',
+    emoji: '📚',  // Books and knowledge
     left: '45%',
     top: '70%',
   },
   {
     title: 'Fitness',
-    emoji: '🏋️',
+    emoji: '🏋️‍♂️',  // Weightlifting represents fitness
     left: '5%',
     top: '65%',
   },
-]
+];
+
 
 export const AboutSection = () => {
   const constraintRef = useRef(null);
