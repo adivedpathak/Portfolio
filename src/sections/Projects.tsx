@@ -56,6 +56,7 @@ export const ProjectsSection = () => {
           title="Featured Projects"
           description="See how I transformed repetative tasks into engaging digital experiences."
         />
+        
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <Card
