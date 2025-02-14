@@ -1,6 +1,3 @@
-import rajpath from "@/assets/images/Rajpath.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -19,7 +16,6 @@ const portfolioProjects = [
     { title: "Scaled for 100,000 users for 2024 elections" },
     ],
     link: "https://rajpath-2024.vercel.app/",
-    image: rajpath,
   },
   {
     company: "BNS Saral",
@@ -31,7 +27,6 @@ const portfolioProjects = [
     { title: "Reduced manual labor by 50% with Docker deployment" },
     ],
     link: "https://interview-platform-ten.vercel.app/",
-    image: rajpath,
   },
   {
     company: "CodeCollab",
@@ -43,7 +38,6 @@ const portfolioProjects = [
     { title: "Facilitated real-time output sharing, cutting turnaround times by 20%" },
     ],
     link: "https://interview-platform-ten.vercel.app/",
-    image: rajpath,
   },
 ];
 
@@ -56,7 +50,7 @@ export const ProjectsSection = () => {
           title="Featured Projects"
           description="See how I transformed repetative tasks into engaging digital experiences."
         />
-        
+
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <Card
