@@ -71,7 +71,7 @@ export const HeroSection = () => {
 
         <div className="max-w-lg mx-auto text-center">
           <h1 className="font-serif text-3xl md:text-5xl mt-8 tracking-wide">
-            Engineering scalable & high-performance systems
+           Aditya Vedpathak
           </h1>
           <p className="mt-4 text-white/60 md:text-lg">
             Backend-focused full-stack developer specializing in scalable
@@ -103,7 +103,7 @@ export const HeroSection = () => {
               const resumeUrl = "/ADITYA_resune.pdf"; // Ensure it's in the public folder
               const link = document.createElement("a");
               link.href = resumeUrl;
-              link.download = "Mihir's Resume.pdf";
+              link.download = "Aditya's Resume.pdf";
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
