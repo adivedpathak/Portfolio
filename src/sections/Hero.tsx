@@ -100,7 +100,7 @@ export const HeroSection = () => {
           <button
             className="inline-flex items-center gap-2 border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-transform transform hover:scale-105 hover:bg-gray-300 active:scale-95 shadow-md hover:shadow-lg"
             onClick={() => {
-              const resumeUrl = "/Mihir's Resume.pdf"; // Ensure it's in the public folder
+              const resumeUrl = "/ADITYA_resune.pdf"; // Ensure it's in the public folder
               const link = document.createElement("a");
               link.href = resumeUrl;
               link.download = "Mihir's Resume.pdf";
