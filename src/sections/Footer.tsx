@@ -3,15 +3,15 @@ import { FiArrowUpRight } from "react-icons/fi";
 const footerLinks = [
   {
     title: "LinkedIn",
-    href: "https://www.linkedin.com/in/meeheer123/",
+    href: "https://www.linkedin.com/in/aditya-vedpathak-2b469b259/",
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/mihir.py",
+    href: "https://www.instagram.com/adi.vedpathak/",
   },
   {
     title: "Github",
-    href: "https://github.com/meeheer123/",
+    href: "https://github.com/adivedpathak",
   },
 ];
 

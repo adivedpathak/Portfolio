@@ -7,7 +7,7 @@ import { Card } from "@/components/Card";
 
 const achievements = [
   {
-    title: "Awarded Top Innovator",
+    title: "1",
     year: "2024",
     description: "Recognized for exceptional contributions to developing innovative solutions in the tech industry.",
     results: [
