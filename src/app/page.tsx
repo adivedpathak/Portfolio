@@ -7,7 +7,7 @@ import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
 import { Analytics } from "@vercel/analytics/react"
-import { AchievementsSection } from "@/sections/Achiev";
+import { AchievementsSection } from "@/sections/AchievementsSection";
 export default function Home() {
   return (
     <div>

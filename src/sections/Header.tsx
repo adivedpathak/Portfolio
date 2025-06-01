@@ -11,13 +11,12 @@ export const Header: FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'projects', 'about'];
-      
+      const sections = ['hero', 'projects', 'achievements', 'about']; // ✅ include 'achievements'
+
       for (const sectionId of sections) {
         const section = document.getElementById(sectionId);
         if (section) {
           const rect = section.getBoundingClientRect();
-          // Add some buffer for better UX
           if (rect.top <= 100 && rect.bottom >= 100) {
             setActiveSection(sectionId);
             break;
@@ -27,8 +26,8 @@ export const Header: FC = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initial position
-    
+    handleScroll(); // initial check
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -60,6 +59,14 @@ export const Header: FC = () => {
           Home
         </a>
         <a 
+          href="#achievements" 
+          onClick={(e) => handleClick(e, 'achievements')}
+          className={`nav-item text-sm sm:text-base px-3 sm:px-4 py-2 transition-colors duration-300
+            ${activeSection === 'achievements' ? 'bg-white text-gray-900' : 'hover:text-white/80'}`}
+        >
+          Achievements
+        </a>
+        <a 
           href="#projects" 
           onClick={(e) => handleClick(e, 'projects')}
           className={`nav-item text-sm sm:text-base px-3 sm:px-4 py-2 transition-colors duration-300
@@ -67,6 +74,7 @@ export const Header: FC = () => {
         >
           Projects
         </a>
+        
         <a 
           href="#about" 
           onClick={(e) => handleClick(e, 'about')}
