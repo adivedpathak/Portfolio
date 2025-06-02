@@ -110,7 +110,7 @@ export const AchievementsSection = () => {
                     </ul>
                   </div>
                   
-                  <a 
+                  {/* <a 
                     href={achievement.link}
                     className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-sky-500 hover:from-emerald-400 hover:to-sky-400 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/20 mt-8 group/button relative overflow-hidden"
                   >
@@ -120,7 +120,7 @@ export const AchievementsSection = () => {
                       className="relative z-10 group-hover/button:translate-x-0.5 group-hover/button:-translate-y-0.5 transition-transform"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-sky-600 translate-y-full group-hover/button:translate-y-0 transition-transform" />
-                  </a>
+                  </a> */}
                 </div>
                 
                 <div className="relative h-full lg:min-h-[500px] overflow-hidden">

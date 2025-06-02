@@ -7,6 +7,7 @@ import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 
+
 export const HeroSection = () => {
   return (
     <section
@@ -80,6 +81,7 @@ export const HeroSection = () => {
             reliability, efficiency at every step.
           </p>
         </div>
+
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 relative z-50">

@@ -16,6 +16,7 @@ import { ToolBoxItems } from "@/components/ToolBoxItems"
 import { motion } from "framer-motion"
 import { useRef } from "react"
 
+
 const toolBoxItems = [
   {
     title: "Javascript",
@@ -143,6 +144,7 @@ export const AboutSection = () => {
           title="A Glimpse Into my World"
           description="Learn more about who I am, what I do, and what inspires me."
         />
+        
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="h-[320px] flex flex-col justify-between">
